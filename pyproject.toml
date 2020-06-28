@@ -8,6 +8,7 @@ authors = ["yay4ya <yay4ya.dev@gmail.com>"]
 python = "^3.8"
 pytchat = "^0.0.8"
 python-dateutil = "^2.8.1"
+slackclient = "^2.7.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
