@@ -8,7 +8,7 @@ catflap
 ### Installation
 
 ```
-$ pip instal git+https://github.com/yay4ya/catflap
+$ pip install git+https://github.com/yay4ya/catflap
 ```
 
 ### Usage
@@ -28,4 +28,13 @@ optional arguments:
   --proxy PROXY         choose proxy for live chat stream
   --max-requests MAX_REQUESTS
                         set limit of number of requests
+```
+
+
+### Example
+
+```
+$ export SLACK_BOT_TOKEN=xxxx-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX
+$ export SLACK_BOT_CHANNEL="#your-channel"
+$ catflap videoid --proxy slack
 ```
