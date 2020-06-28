@@ -1,5 +1,4 @@
 import argparse
-import dataclasses
 import logging
 
 from catflap import __version__
