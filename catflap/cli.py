@@ -1,6 +1,5 @@
 import argparse
 import dataclasses
-import json
 import logging
 
 from catflap import __version__
@@ -35,13 +34,21 @@ def create_parser(prog: str = None) -> argparse.ArgumentParser:
 
 
 def run_from_args(args: argparse.Namespace) -> None:
-    params_str = json.dumps(vars(args))
-    logger.info("parameters: %s", params_str)
+    logger.info(
+        "parameters: video=%s proxy=%s max-requests=%r",
+        args.video,
+        args.proxy,
+        args.max_requests,
+    )
 
     video_id = get_videoid_from_urllike(args.video)
     video = Video.by_id(video_id)
-    video_str = json.dumps(dataclasses.asdict(video))
-    logger.info("video: %s", video_str)
+    logger.info(
+        "video: id=%s title=%s channel=%s",
+        video.id,
+        video.title,
+        video.channel_name,
+    )
 
     proxy = Proxy.by_name(args.proxy)
 
@@ -53,11 +60,11 @@ def run_from_args(args: argparse.Namespace) -> None:
 
     try:
         worker()
-    except KeyboardInterrupt:
-        proxy.post_system_message("Keyboard Interrupted")
     except Exception as err:
         proxy.post_system_message(str(err))
         raise
+
+    proxy.post_system_message("Process finished.")
 
 
 def main(prog: str = None) -> None:
