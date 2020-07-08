@@ -31,6 +31,7 @@ class SlackProxy(Proxy):
         channel = self._channel
         username = "SYSTEM INFO"
         icon_emoji = ":robot_face:"
+        text = f"<!channel> {text}"
 
         self._client.chat_postMessage(
             channel=channel,
