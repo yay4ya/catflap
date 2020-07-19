@@ -49,5 +49,5 @@ $ docker build -t catflap -f docker/Dockerfile
 $ docker run -d  --restart=always \
     -e SLACK_BOT_TOKEN=xxxx-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX \
     -e SLACK_BOT_CHANNEL="#your-channel" \
-    catflap:latest poetry run catflap videoid --proxy slack
+    catflap videoid --proxy slack
 ```
