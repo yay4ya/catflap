@@ -1,11 +1,3 @@
-# build artifacts
-.eggs/
-colt.egg-info/
-build/
-dist/
-pip-wheel-metadata/
-
-
 # python
 *.pyc
 *.pyo
