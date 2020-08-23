@@ -14,7 +14,7 @@ RUN apk add --no-cache \
         libressl-dev \
         musl-dev \
         libffi-dev
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 RUN apk del \
         gcc \
         libressl-dev \
