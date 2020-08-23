@@ -235,7 +235,7 @@ description = "a python library for fetching youtube live chat."
 name = "pytchat"
 optional = false
 python-versions = "*"
-version = "0.0.8"
+version = "0.1.4"
 
 [package.dependencies]
 aiohttp = "*"
@@ -391,7 +391,8 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "1511666a34782296fba366084162eae9d530d232ddf5b36cb631da28e67b1a8e"
+content-hash = "d64d3ad500fbae7ee4b1602924b8d8631e97fae6a58ea37c6dd0d21171ea2bb2"
+lock-version = "1.0"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -556,7 +557,7 @@ pyparsing = [
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
 ]
 pytchat = [
-    {file = "pytchat-0.0.8-py3-none-any.whl", hash = "sha256:cf6cb98714b068215978a4c647ac561f82cd0f3b65e9c921bf674e12628f0588"},
+    {file = "pytchat-0.1.4-py3-none-any.whl", hash = "sha256:34eb051579e15c58e961ca969706362dc4c86f12e89f7af339b9500118bbb32c"},
 ]
 pytest = [
     {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
