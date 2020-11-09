@@ -2,6 +2,7 @@ catflap
 =======
 
 [![Actions Status](https://github.com/yay4ya/catflap/workflows/build/badge.svg)](https://github.com/yay4ya/catflap/actions?query=workflow%3Abuild)
+[![Docker Build](https://img.shields.io/docker/cloud/build/yay4ya/catflap)](https://hub.docker.com/r/yay4ya/catflap/builds)
 [![License](https://img.shields.io/github/license/yay4ya/catflap)](https://github.com/yay4ya/catflap/blob/master/LICENSE)
 
 `catflap` is a command line tool to export messages from YouTube Live Chat to other services such as Slack.
